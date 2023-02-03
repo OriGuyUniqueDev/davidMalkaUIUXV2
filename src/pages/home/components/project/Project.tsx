@@ -19,7 +19,6 @@ const Project: FunctionComponent<ProjectProps> = ({ project }) => {
 					</button>
 				</div>
 				<LazyLoadImage src={project.img.url} alt={project.img.alt} placeholderSrc="loading..." effect="opacity" />
-				<img />
 			</div>
 		</div>
 	);
