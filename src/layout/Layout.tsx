@@ -10,7 +10,7 @@ interface LayoutProps {
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 	return (
 		<>
-			<div className="flex flex-col justify-between h-screen">
+			<div className="flex flex-col bg-projectBlack  ">
 				<Header />
 				<Main>{children}</Main>
 				<Footer />

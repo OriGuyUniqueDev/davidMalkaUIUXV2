@@ -5,7 +5,7 @@ interface MainProps {
 }
 
 const Main: FunctionComponent<MainProps> = ({ children }) => {
-	return <div className="h-[85vh]">{children}</div>;
+	return <div className=" ">{children}</div>;
 };
 
 export default Main;
