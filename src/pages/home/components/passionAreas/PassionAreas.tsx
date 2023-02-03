@@ -26,8 +26,8 @@ const PassionAreas: FunctionComponent<PassionAreasProps> = () => {
 		<div className={`w-full flex flex-col items-center justify-between py-[12rem]  h-[81.2rem] px-28 bg-projectBlack text-projectLightGray`}>
 			<p className="text-center font-bold text-[8.4rem] font-serif">Passion areas</p>
 			<div className="flex gap-24 justify-center h-[28rem] ">
-				{passionsData.map((passionData) => (
-					<PassionArea passion={passionData} />
+				{passionsData.map((passionData, index) => (
+					<PassionArea key={index} passion={passionData} />
 				))}
 			</div>
 		</div>

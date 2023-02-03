@@ -18,7 +18,7 @@ const Project: FunctionComponent<ProjectProps> = ({ project }) => {
 						View project <img src={project.colorBG === "projectBlack" ? "/icons/leftArrowWhite.svg" : "/icons/leftArrowBlack.svg"} alt="left arrow" />
 					</button>
 				</div>
-				<LazyLoadImage src={project.img.url} alt={project.img.alt} placeholderSrc="loading..." effect="opacity" />
+				<LazyLoadImage src={project.img.url} alt={project.img.alt} effect="opacity" />
 			</div>
 		</div>
 	);
