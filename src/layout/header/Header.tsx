@@ -5,7 +5,7 @@ interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
 	return (
-		<div className="container mx-auto bg-projectBlack h-[6rem]  flex justify-between items-center">
+		<div className="container mx-auto bg-projectBlack h-[6rem]  flex justify-between px-28  items-center">
 			<Link to="/">
 				<img src="/icons/logoLight.png" alt="logo in nav bar" />
 			</Link>
