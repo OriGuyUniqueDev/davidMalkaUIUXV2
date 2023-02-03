@@ -6,6 +6,7 @@ interface ProjectType {
 	img: ImageType;
 	colorBG: string;
 	reverse: boolean;
+	linkTo: string;
 }
 
 export default ProjectType;

@@ -14,9 +14,9 @@ const Project: FunctionComponent<ProjectProps> = ({ project }) => {
 				<div>
 					<p className={`font-serif text-8xl font-bold mb-7 ${project.colorBG === "projectBlack" ? "text-projectWhite" : " text-projectBlack"} `}>{project.title}</p>
 					<p className="text-projectGrey mb-[4.8rem] text-4xl">{project.subTitle}</p>
-					<button className={`px-6 py-7 w-[16.9rem] h-[6.1rem] flex items-center gap-4 justify-center ${project.colorBG === "projectBlack" ? "border-projectWhite text-projectWhite" : "border-projectBlack text-projectBlack"} border-[0.2rem] font-bold text-2xl`}>
+					<a href={`/project/${project.linkTo}`} className={`px-6 py-7 w-[16.9rem] h-[6.1rem] flex items-center gap-4 justify-center ${project.colorBG === "projectBlack" ? "border-projectWhite text-projectWhite" : "border-projectBlack text-projectBlack"} border-[0.2rem] font-bold text-2xl`}>
 						View project <img src={project.colorBG === "projectBlack" ? "/icons/leftArrowWhite.svg" : "/icons/leftArrowBlack.svg"} alt="left arrow" />
-					</button>
+					</a>
 				</div>
 				<LazyLoadImage src={project.img.url} alt={project.img.alt} effect="opacity" />
 			</div>
