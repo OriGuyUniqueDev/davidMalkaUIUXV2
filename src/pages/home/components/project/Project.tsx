@@ -1,5 +1,7 @@
 import { FunctionComponent } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import ProjectType from "../../../../interfaces/ProjectType";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 interface ProjectProps {
 	project: ProjectType;
@@ -16,7 +18,8 @@ const Project: FunctionComponent<ProjectProps> = ({ project }) => {
 						View project <img src={project.colorBG === "projectBlack" ? "/icons/leftArrowWhite.svg" : "/icons/leftArrowBlack.svg"} alt="left arrow" />
 					</button>
 				</div>
-				<img src={project.img.url} alt={project.img.alt} />
+				<LazyLoadImage src={project.img.url} alt={project.img.alt} placeholderSrc="loading..." effect="opacity" />
+				<img />
 			</div>
 		</div>
 	);
