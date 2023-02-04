@@ -12,7 +12,7 @@ const RamAderet: FunctionComponent<RamAderetProps> = () => {
 	const exploreText = "You're taking a great approach to ensuring success for Ram Adrat's internal SAP system! By understanding the pain points, motivations, and business goals of the users, you're setting yourself up to provide them with an optimized and enjoyable experience. To get a better understanding of what they need, why not try reaching out to them directly? I was conducting surveys, interviews, or any other type of research to get a feel for what's important to them and how can i help. This information will be invaluable in creating a user-friendly system that everyone will love!";
 	return (
 		<div className="">
-			<HeroProject imageBG={{ url: "/images/projects/ramAderet/images/heroBG.png", alt: "ramAderet Background" }} image={{ url: "/images/projects/ramAderet/images/heroMockup.png", alt: "ram aderet mockup" }} />
+			<HeroProject resImage={{ url: "/images/projects/ramAderet/images/heroMobile.png", alt: "ramAderet Background" }} imageBG={{ url: "/images/projects/ramAderet/images/heroBG.png", alt: "ramAderet Background" }} image={{ url: "/images/projects/ramAderet/images/heroMockup.png", alt: "ram aderet mockup" }} />
 			<AboutProject data={aboutText} />
 			<ExploreIdeas data={exploreText} />
 			<Contact />
