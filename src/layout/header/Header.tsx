@@ -1,15 +1,23 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import MobileMenu from "./MobileMenu";
 
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
+	const [showMenu, setShowMenu] = useState<boolean>(true);
+	window.addEventListener("resize", () => {
+		window.innerWidth <= 1280 ? setShowMenu(true) : setShowMenu(false);
+	});
+	useEffect(() => {
+		window.innerWidth <= 1280 ? setShowMenu(false) : setShowMenu(true);
+	}, []);
 	let activeStyle = {
 		textDecoration: "underline",
 	};
 	return (
-		<div className="w-full mx-auto bg-projectBlack h-[6rem]     ">
-			<div className="max-w-[1280px] mx-auto h-full px-[7rem] flex justify-between items-center">
+		<div className="w-full mx-auto bg-projectBlack md:h-[6rem] sm:h-[10rem] sm:mb-[2.4rem]     ">
+			<div className="md:max-w-[1280px] sm:max-w-[375px] mx-auto h-full md:px-[7rem] sm:px-[1.8rem] flex justify-between md:items-center sm:items-end">
 				<Link to="/">
 					<img src="/icons/logoLight.png" alt="logo in nav bar" />
 				</Link>

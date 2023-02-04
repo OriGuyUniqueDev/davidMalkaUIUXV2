@@ -23,9 +23,9 @@ const PassionAreas: FunctionComponent<PassionAreasProps> = () => {
 		},
 	];
 	return (
-		<div className={`w-full flex flex-col items-center justify-between py-[12rem]  h-[81.2rem] px-28 bg-projectBlack text-projectLightGray`}>
-			<p className="text-center font-bold text-[8.4rem] font-serif">Passion areas</p>
-			<div className="flex gap-24 justify-center h-[28rem] ">
+		<div className={`w-full flex flex-col md:items-center md:gap-[8.1rem]  md:py-[12rem] sm:py-[6rem] md:h-[81.2rem] sm:h-fit md:px-[7rem] sm:px-[1.8rem] bg-projectBlack text-projectLightGray`}>
+			<p className="md:text-center sm:text-start sm:leading-[6rem] font-bold md:text-[8.4rem] sm:text-[6.4rem] font-serif">Passion areas</p>
+			<div className="flex md:flex-row sm:flex-col gap-24 justify-center sm:mt-[3rem] md:mt-0  md:h-[28rem] sm:h-fit ">
 				{passionsData.map((passionData, index) => (
 					<PassionArea key={index} passion={passionData} />
 				))}

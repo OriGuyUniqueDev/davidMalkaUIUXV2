@@ -5,21 +5,21 @@ interface FooterProps {}
 
 const Footer: FunctionComponent<FooterProps> = () => {
 	return (
-		<div className="bg-projectLightGray w-full mx-auto h-[6rem] ">
-			<div className="max-w-[1280px] mx-auto px-[7rem]  flex justify-between items-center h-full ">
-				<div className="flex items-center">
+		<div className="bg-projectWhite w-full mx-auto h-[6rem] ">
+			<div className="md:max-w-[1280px] sm:max-w-[375px] mx-auto px-[7rem] sm:py-[4.8rem] md:py-0  flex justify-between md:flex-row sm:flex-col items-center  md:h-full sm:h-fit ">
+				<div className="flex md:flex-row sm:flex-col  items-center">
 					<Link to="/">
-						<img className="mr-10" src="/icons/logoDark.png" alt="logo footer" />
+						<img className="md:mr-10 md:mb-0 sm:mb-[3.1rem] sm:w-[7.4rem] md:w-[4rem] sm:mx-auto" src="/icons/logoDark.png" alt="logo footer" />
 					</Link>
-					<div className="flex gap-6 text-3xl text-[#7c7c7c] ">
+					<div className="flex md:flex-row sm:flex-col sm:text-center gap-6 text-3xl text-[#7c7c7c] ">
 						<a href="mailto:dudu5malka@gmail.com">dudu5malka@gmail.com</a>
-						<p>|</p>
+						<p className="md:block sm:hidden">|</p>
 						<a href="tel:+972547951888" data-rel="external">
 							+972547951888
 						</a>
 					</div>
 				</div>
-				<div className="text-[#7d7d7d] flex gap-6">
+				<div className="text-[#7d7d7d] flex gap-6 md:mt-0 sm:mt-[5.2rem]">
 					<a href="https://www.instagram.com/david12187/" target="blank">
 						<img width="24px" src="/icons/instagram.png" alt="instagram link" />
 					</a>
