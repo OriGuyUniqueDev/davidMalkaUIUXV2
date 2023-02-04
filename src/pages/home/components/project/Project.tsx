@@ -9,8 +9,8 @@ interface ProjectProps {
 
 const Project: FunctionComponent<ProjectProps> = ({ project }) => {
 	return (
-		<div className={`w-full mx-auto  h-[81.2rem] pb-[11.8rem] ${`bg-${project.colorBG}`} px-28`}>
-			<div className={`container mx-auto flex h-[81.2rem] items-center justify-between ${project.reverse ? "flex-row-reverse" : ""}  `}>
+		<div className={`w-full mx-auto  h-[81.2rem] pb-[11.8rem] ${`bg-${project.colorBG}`} `}>
+			<div className={`max-w-[1280px] mx-auto flex h-[81.2rem] items-center justify-between ${project.reverse ? "flex-row-reverse" : ""} px-[7rem] `}>
 				<div>
 					<p className={`font-serif text-8xl font-bold mb-7 ${project.colorBG === "projectBlack" ? "text-projectWhite" : " text-projectBlack"} `}>{project.title}</p>
 					<p className="text-projectGrey mb-[4.8rem] text-4xl">{project.subTitle}</p>

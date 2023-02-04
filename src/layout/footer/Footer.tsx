@@ -5,8 +5,8 @@ interface FooterProps {}
 
 const Footer: FunctionComponent<FooterProps> = () => {
 	return (
-		<div className="bg-projectLightGray w-full mx-auto h-[6rem] px-28  ">
-			<div className="container mx-auto  flex justify-between items-center h-full ">
+		<div className="bg-projectLightGray w-full mx-auto h-[6rem] ">
+			<div className="max-w-[1280px] mx-auto px-[7rem]  flex justify-between items-center h-full ">
 				<div className="flex items-center">
 					<Link to="/">
 						<img className="mr-10" src="/icons/logoDark.png" alt="logo footer" />
