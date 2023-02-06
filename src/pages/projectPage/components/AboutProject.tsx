@@ -6,7 +6,7 @@ interface AboutProjectProps {
 
 const AboutProject: FunctionComponent<AboutProjectProps> = ({ data }) => {
 	return (
-		<div className="bg-projectWhite w-full md:py-[12rem] sm:py-[6rem] ">
+		<div className="bg-projectWhite relative w-full md:py-[12rem] sm:py-[6rem] ">
 			<div className="md:max-w-[1280px] mx-auto md:px-[7rem] sm:px-[1.8rem] ">
 				<div className="w-full">
 					<p className="text-[2.1rem] uppercase sm:hidden md:block   text-projectGrey">Introduction.</p>

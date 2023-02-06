@@ -4,6 +4,9 @@ import AboutProject from "../../components/AboutProject";
 import ExploreIdeas from "../../components/ExploreIdeas";
 import HeroProject from "../../components/HeroProject";
 import ProjectNavigation from "../../components/ProjectsNavigation";
+import History from "./components/History";
+import OldNew from "./components/OldNew";
+import ResearchUsers from "./components/researchUsers/ResearchUsers";
 
 interface AbraProps {}
 
@@ -13,7 +16,13 @@ const Abra: FunctionComponent<AbraProps> = () => {
 		<div className="">
 			<HeroProject resImage={{ url: "/images/projects/ramAderet/images/heroMobile.png", alt: "ramAderet Background" }} imageBG={{ url: "/images/projects/abra/images/heroBG.png", alt: "ramAderet Background" }} image={{ url: "/images/projects/abra/images/heroMockup.png", alt: "ram aderet mockup" }} />
 			<AboutProject data={aboutText} />
-			{/* <ExploreIdeas data={exploreText} /> */}
+
+			<div className="relative">
+				<img className="mx-auto absolute -top-[17rem]  left-[55%] z-10 md:px-[7rem] sm:px-[1.8rem]" src="/images/projects/abra/images/reactAvatar.png" alt="react avatar" />
+			</div>
+			<History />
+			<ResearchUsers />
+			<OldNew />
 			<Contact />
 			<ProjectNavigation previous="ramAderet" next="paamonim" />
 		</div>
