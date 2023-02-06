@@ -9,7 +9,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
 			<div className="md:max-w-[1280px] sm:max-w-[375px] mx-auto px-[7rem] sm:py-[4.8rem] md:py-0  flex justify-between md:flex-row sm:flex-col items-center  md:h-full sm:h-fit ">
 				<div className="flex md:flex-row sm:flex-col  items-center">
 					<Link to="/">
-						<img className="md:mr-10 md:mb-0 sm:mb-[3.1rem] sm:w-[7.4rem] md:w-[4rem] sm:mx-auto" src="/icons/logoDark.png" alt="logo footer" />
+						<img className="md:mr-10 md:mb-0 sm:mb-[3.1rem] sm:w-[7.4rem] md:w-[4rem] sm:mx-auto" src="/icons/logoDark.svg" alt="logo footer" />
 					</Link>
 					<div className="flex md:flex-row sm:flex-col sm:text-center gap-6 text-3xl text-[#7c7c7c] ">
 						<a href="mailto:dudu5malka@gmail.com">dudu5malka@gmail.com</a>

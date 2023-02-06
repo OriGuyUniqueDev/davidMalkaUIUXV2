@@ -8,11 +8,11 @@ import Project from "./components/project/Project";
 
 interface HomePageProps {}
 const projects: ProjectType[] = [
-	{ title: "Abra W&M", subTitle: "UI/UX (Website)", img: { url: "/images/homePage/abra.webp", alt: "abra project" }, colorBG: "projectWhite", reverse: false, linkTo: "abra" },
-	{ title: "Ram Aderet", subTitle: "Product Design", img: { url: "/images/homePage/ramAderet.webp", alt: "ramAderet project" }, colorBG: "projectBlack", reverse: true, linkTo: "ramAderet" },
-	{ title: "Pa’amonim", subTitle: "Product design", img: { url: "/images/homePage/paamonim.webp", alt: "paamonim project" }, colorBG: "projectWhite", reverse: false, linkTo: "paamonim" },
-	{ title: "Figma Manage", subTitle: "Case Study", img: { url: "/images/homePage/figmaManage.webp", alt: "figmaManage project" }, colorBG: "projectBlack", reverse: true, linkTo: "figmaManage" },
-	{ title: "Redis Labs", subTitle: "UI/UX Design", img: { url: "/images/homePage/redis.webp", alt: "redis project" }, colorBG: "projectWhite", reverse: false, linkTo: "redis" },
+	{ title: "Abra W&M", subTitle: "UI/UX (Website)", img: { url: "/images/homePage/abra.png", alt: "abra project" }, colorBG: "projectWhite", reverse: false, linkTo: "abra" },
+	{ title: "Ram Aderet", subTitle: "Product Design", img: { url: "/images/homePage/ramAderet.png", alt: "ramAderet project" }, colorBG: "projectBlack", reverse: true, linkTo: "ramAderet" },
+	{ title: "Pa’amonim", subTitle: "Product design", img: { url: "/images/homePage/paamonim.png", alt: "paamonim project" }, colorBG: "projectWhite", reverse: false, linkTo: "paamonim" },
+	{ title: "Figma Manage", subTitle: "Case Study", img: { url: "/images/homePage/figmaManage.png", alt: "figmaManage project" }, colorBG: "projectBlack", reverse: true, linkTo: "figmaManage" },
+	{ title: "Redis Labs", subTitle: "UI/UX Design", img: { url: "/images/homePage/redis.png", alt: "redis project" }, colorBG: "projectWhite", reverse: false, linkTo: "redis" },
 ];
 
 const HomePage: FunctionComponent<HomePageProps> = () => {

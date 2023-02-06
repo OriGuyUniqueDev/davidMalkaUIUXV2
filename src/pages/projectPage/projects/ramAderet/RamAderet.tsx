@@ -1,9 +1,14 @@
 import { FunctionComponent } from "react";
 import Contact from "../../../home/components/contact/Contact";
 import AboutProject from "../../components/AboutProject";
+import BringTogether from "../../components/BringTogether";
+import ChallengesPainPoints from "../../components/challengesPainPoint/ChallengesPainPoints";
+import Execution from "../../components/Execution";
 import ExploreIdeas from "../../components/ExploreIdeas";
 import HeroProject from "../../components/HeroProject";
 import ProjectNavigation from "../../components/ProjectsNavigation";
+import StyleGuide from "../../components/StyleGuide";
+import ResearchUsers from "./components/ResearchUsers";
 
 interface RamAderetProps {}
 
@@ -15,6 +20,11 @@ const RamAderet: FunctionComponent<RamAderetProps> = () => {
 			<HeroProject resImage={{ url: "/images/projects/ramAderet/images/heroMobile.png", alt: "ramAderet Background" }} imageBG={{ url: "/images/projects/ramAderet/images/heroBG.png", alt: "ramAderet Background" }} image={{ url: "/images/projects/ramAderet/images/heroMockup.png", alt: "ram aderet mockup" }} />
 			<AboutProject data={aboutText} />
 			<ExploreIdeas data={exploreText} />
+			<ResearchUsers />
+			<ChallengesPainPoints />
+			<Execution image={{ url: "/images/projects/ramAderet/images/execution.png", alt: "execution image" }} />
+			<BringTogether image={{ url: "/images/projects/ramAderet/images/bringTogether.png", alt: "bring together image" }} />
+			<StyleGuide image={{ url: "/images/projects/ramAderet/images/styleGuide.png", alt: "style guide image" }} />
 			<Contact />
 			<ProjectNavigation previous="redis" next="abra" />
 		</div>

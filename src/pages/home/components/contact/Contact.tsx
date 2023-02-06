@@ -4,9 +4,9 @@ interface ContactProps {}
 
 const Contact: FunctionComponent<ContactProps> = () => {
 	return (
-		<div className="w-full md:h-[81.2rem] sm:h-fit flex flex-col md:py-[12rem] sm:py-[8.6rem] bg-projectBlack items-center justify-center md:gap-[5.9rem] sm:gap-[4.5rem]">
+		<div className="w-full  flex flex-col md:py-[12rem] sm:py-[8.6rem] bg-projectBlack items-center justify-center md:gap-[5.9rem] sm:gap-[4.5rem]">
 			<div className="flex flex-col  gap-10 text-projectWhite ">
-				<img className="md:w-[12.6rem] sm:w-[15.7rem]  mx-auto" src="/images/homePage/avatarContact.webp" alt="avatar image" />
+				<img className="md:w-[12.6rem] sm:w-[15.7rem]  mx-auto" src="/images/homePage/avatarContact.png" alt="avatar image" />
 				<div>
 					<p className="text-center mb-4 text-4xl">🤙 Did you got impressed? </p>
 					<p className="text-center  text-4xl">Let me bring my skills to your team.</p>
