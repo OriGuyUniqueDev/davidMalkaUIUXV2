@@ -1,9 +1,13 @@
 import { FunctionComponent } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Contact from "../../../home/components/contact/Contact";
 import AboutProject from "../../components/AboutProject";
+import BringTogether from "../../components/BringTogether";
+import Execution from "../../components/Execution";
 import ExploreIdeas from "../../components/ExploreIdeas";
 import HeroProject from "../../components/HeroProject";
 import ProjectNavigation from "../../components/ProjectsNavigation";
+import AllHappens from "./AllHappens";
 import History from "./components/History";
 import OldNew from "./components/OldNew";
 import ResearchUsers from "./components/researchUsers/ResearchUsers";
@@ -23,6 +27,15 @@ const Abra: FunctionComponent<AbraProps> = () => {
 			<History />
 			<ResearchUsers />
 			<OldNew />
+			<Execution image={{ url: "/images/projects/abra/images/execution.png", alt: "execution image" }} />
+			<BringTogether images={[{ url: "/images/projects/abra/images/bringTogether.png", alt: "bring together image" }]} />
+			<div className="bg-projectWhite relative w-full  h-[100rem]  ">
+				<div className="md:max-w-[1280px]  mx-auto md:px-[7rem] sm:px-[1.8rem] ">
+					<LazyLoadImage className="absolute right-0 h-[43.2rem]" src="/images/projects/abra/images/bringTogether2.png" alt="bringTogether" />
+					<LazyLoadImage className="h-[83.1rem] absolute top-[30rem]" src="/images/projects/abra/images/bringTogether3.png" alt="bringTogether" />
+				</div>
+			</div>
+			<AllHappens />
 			<Contact />
 			<ProjectNavigation previous="ramAderet" next="paamonim" />
 		</div>
