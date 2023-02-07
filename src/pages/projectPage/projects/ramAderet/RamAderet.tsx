@@ -23,7 +23,7 @@ const RamAderet: FunctionComponent<RamAderetProps> = () => {
 			<ResearchUsers />
 			<ChallengesPainPoints />
 			<Execution image={{ url: "/images/projects/ramAderet/images/execution.png", alt: "execution image" }} />
-			<BringTogether image={{ url: "/images/projects/ramAderet/images/bringTogether.png", alt: "bring together image" }} />
+			<BringTogether images={[{ url: "/images/projects/ramAderet/images/bringTogether.png", alt: "bring together image" }]} />
 			<StyleGuide image={{ url: "/images/projects/ramAderet/images/styleGuide.png", alt: "style guide image" }} />
 			<Contact />
 			<ProjectNavigation previous="redis" next="abra" />
