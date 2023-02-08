@@ -59,6 +59,7 @@ const Paamonim: FunctionComponent<PaamonimProps> = () => {
 			/>
 			<BringTogether images={[{ url: "/images/projects/paamonim/images/bringTogether.png", alt: "bringTogether image" }]} />
 			<StyleGuide image={{ url: "/images/projects/paamonim/images/styleGuide.png", alt: "styleGuide image" }} />
+
 			<Contact />
 			<ProjectNavigation previous="ramAderet" next="figmaManage" />
 		</div>
