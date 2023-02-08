@@ -1,10 +1,9 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Contact from "../../../home/components/contact/Contact";
 import AboutProject from "../../components/AboutProject";
 import BringTogether from "../../components/BringTogether";
 import Execution from "../../components/Execution";
-import ExploreIdeas from "../../components/ExploreIdeas";
 import HeroProject from "../../components/HeroProject";
 import ProjectNavigation from "../../components/ProjectsNavigation";
 import AllHappens from "./AllHappens";
