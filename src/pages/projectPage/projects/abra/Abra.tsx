@@ -26,7 +26,7 @@ const Abra: FunctionComponent<AbraProps> = () => {
 			<History />
 			<ResearchUsers />
 			<OldNew />
-			<Execution image={{ url: "/images/projects/abra/images/execution.png", alt: "execution image" }} />
+			<Execution images={[{ url: "/images/projects/abra/images/execution.png", alt: "execution image" }]} />
 			<BringTogether images={[{ url: "/images/projects/abra/images/bringTogether.png", alt: "bring together image" }]} />
 			<div className="bg-projectWhite relative w-full  h-[100rem]  ">
 				<div className="md:max-w-[1280px]  mx-auto md:px-[7rem] sm:px-[1.8rem] ">
