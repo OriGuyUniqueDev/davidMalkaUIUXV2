@@ -3,9 +3,13 @@ import ChallengeType from "../../../../interfaces/ChallengeType";
 import PainPointType from "../../../../interfaces/PainPointType";
 import Contact from "../../../home/components/contact/Contact";
 import AboutProject from "../../components/AboutProject";
+import BringTogether from "../../components/BringTogether";
 import ChallengesPainPoints from "../../components/challengesPainPoint/ChallengesPainPoints";
+import Execution from "../../components/Execution";
 import HeroProject from "../../components/HeroProject";
 import ProjectNavigation from "../../components/ProjectsNavigation";
+import StyleGuide from "../../components/StyleGuide";
+import Personas from "./components/Personas";
 
 interface PaamonimProps {}
 
@@ -45,7 +49,16 @@ const Paamonim: FunctionComponent<PaamonimProps> = () => {
 		<div className="">
 			<HeroProject resImage={{ url: "/images/projects/paamonim/images/heroMobile.png", alt: "paamonim Background" }} imageBG={{ url: "/images/projects/paamonim/images/heroBG.png", alt: "paamonim Background" }} image={{ url: "/images/projects/paamonim/images/heroMockup.png", alt: "ram aderet mockup" }} />
 			<AboutProject data={aboutText} />
+			<Personas />
 			<ChallengesPainPoints painPoints={painPoints} challenges={challenges} />
+			<Execution
+				images={[
+					{ url: "images/projects/paamonim/images/execution1.png", alt: "execution image" },
+					{ url: "images/projects/paamonim/images/execution2.png", alt: "execution image" },
+				]}
+			/>
+			<BringTogether images={[{ url: "images/projects/paamonim/images/bringTogether.png", alt: "bringTogether image" }]} />
+			<StyleGuide image={{ url: "images/projects/paamonim/images/styleGuide.png", alt: "styleGuide image" }} />
 			<Contact />
 			<ProjectNavigation previous="ramAderet" next="figmaManage" />
 		</div>
