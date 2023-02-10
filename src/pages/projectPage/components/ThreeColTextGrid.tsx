@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import ThreeColTextGridType from "../../../../../interfaces/ThreeColTextGridType";
+import ThreeColTextGridType from "../../../interfaces/ThreeColTextGridType";
 
 interface ThreeColTextGridProps {
 	cards: ThreeColTextGridType[];

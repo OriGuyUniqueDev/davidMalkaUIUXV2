@@ -17,11 +17,11 @@ const ListOneTwoThree: FunctionComponent<ListOneTwoThreeProps> = ({ bgColor, num
 		<ProjectWrapper bgColor={bgColor} textColor={textColor}>
 			<>
 				<GraySubHeader text={greyText} />
-				<p className="text-[8.4rem] font-bold font-serif w-[80rem] mb-[8.1rem]">{title}</p>
+				<p className="text-[8.4rem] font-bold font-serif w-fit mb-[8.1rem]">{title}</p>
 				<div className="flex flex-col gap-[6rem]">
 					{cards.map((card, index) => {
 						return (
-							<div className="flex gap-[6rem] items-center">
+							<div className="flex gap-[6rem] w-[94.2rem] items-center">
 								<p className={`${numColor} text-[20rem]`}>{index + 1}.</p>
 								<div className="flex flex-col gap-[2.4rem]">
 									<p className="font-bold text-[3.6rem]">{card.title}</p>

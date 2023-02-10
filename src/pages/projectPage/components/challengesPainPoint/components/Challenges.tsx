@@ -1,14 +1,17 @@
 import { FunctionComponent } from "react";
 import ChallengeType from "../../../../../interfaces/ChallengeType";
+import Title from "../../Title";
 
 interface ChallengesProps {
 	challenges: ChallengeType[];
+	title?: string | undefined;
 }
 
-const Challenges: FunctionComponent<ChallengesProps> = ({ challenges }) => {
+const Challenges: FunctionComponent<ChallengesProps> = ({ challenges, title }) => {
 	return (
 		<div>
-			<p className="text-[2.4rem] font-bold mb-[2.4rem] text-projectGrey">CHALLENGES</p>
+			{!title && <p className="text-[2.4rem] font-bold mb-[2.4rem] text-projectGrey">CHALLENGES</p>}
+			{title && <Title title={title} />}
 			<div className="flex flex-col gap-[5.5rem]">
 				{challenges.map((challenge) => {
 					return (

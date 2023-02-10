@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import ButtonTextWithIcon from "../projectPage/components/ButtonTextWithIcon";
 
 interface AboutProps {}
 
@@ -17,9 +18,7 @@ const About: FunctionComponent<AboutProps> = () => {
 					<p className=" text-projectGrey">I'm proud of my knowledge and experience in UI/UX design, which allows me to confidently tackle any project and bring my unique touch to it. My goal is always to create designs with unbeatable usability and design, and I'm always up for a new challenge in my career.</p>
 					<p className=" text-projectGrey"> As the head of the design studio, I'm responsible for guiding a team of talented designers. I love working with my team to bring the best possible user experience to our clients, and I'm always looking for ways to improve and streamline our processes.</p>
 					<p className=" text-projectGrey"> My passion for design drives me forward, and my goal is to become a senior UX/UX designer, leading projects and making a real difference in the industry.</p>
-					<a href="/files/davidMalkaResume.docx" download className={`px-6 py-7 mt-[4.6rem] md:w-[16.9rem] sm:w-full h-[6.1rem] flex items-center gap-4 justify-center border-projectBlack   border-[0.2rem] font-bold text-2xl`}>
-						Download CV <img src="/icons/download.svg" alt="download icon" />
-					</a>
+					<ButtonTextWithIcon borderColor="border-projectBlack" text={"Download CV"} image={{ url: "/icons/leftArrowBlack.svg", alt: "arrow icon" }} />
 				</div>
 			</div>
 		</div>

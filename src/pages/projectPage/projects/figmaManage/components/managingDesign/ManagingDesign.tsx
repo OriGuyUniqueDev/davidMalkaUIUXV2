@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import ThreeColTextGridType from "../../../../../../interfaces/ThreeColTextGridType";
 import GraySubHeader from "../../../../components/GraySubHeader";
 import ProjectWrapper from "../../../../components/ProjectWrapper";
-import ThreeColTextGrid from "../ThreeColTextGrid";
+import ThreeColTextGrid from "../../../../components/ThreeColTextGrid";
 
 interface ManagingDesignProps {
 	cards: ThreeColTextGridType[];

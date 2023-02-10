@@ -5,10 +5,10 @@ interface BrandsProps {}
 const Brands: FunctionComponent<BrandsProps> = () => {
 	const [imageURL, setImageURL] = useState("");
 	window.addEventListener("resize", () => {
-		window.innerWidth <= 1280 ? setImageURL("/images/homePage/companiesMobile.png") : setImageURL("/images/homePage/companies.png");
+		window.innerWidth < 1280 ? setImageURL("/images/homePage/companiesMobile.png") : setImageURL("/images/homePage/companies.png");
 	});
 	useEffect(() => {
-		window.innerWidth <= 1280 ? setImageURL("/images/homePage/companiesMobile.png") : setImageURL("/images/homePage/companies.png");
+		window.innerWidth < 1280 ? setImageURL("/images/homePage/companiesMobile.png") : setImageURL("/images/homePage/companies.png");
 	}, []);
 	return (
 		<div className="w-full md:py-[12rem]  sm:py-[6rem] bg-projectWhite  flex flex-col    items-center">
