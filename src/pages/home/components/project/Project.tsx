@@ -11,7 +11,7 @@ interface ProjectProps {
 const Project: FunctionComponent<ProjectProps> = ({ project }) => {
 	return (
 		<div className={`w-full mx-auto md:px-[7rem]   md:py-[12rem]  ${`bg-${project.colorBG}`} `}>
-			<div className={`md:max-w-[1280px] sm:max-w-[375px] mx-auto md:grid sm:flex  sm:flex-col-reverse md:grid-cols-2   items-center   md:px-[7rem]  sm:px-[1.8rem] sm:py-[6rem] sm:gap-[2.3rem]    ${project.reverse ? " md:justify-items-end" : ""}`}>
+			<div className={`md:max-w-[1280px] sm:max-w-[375px] mx-auto md:grid h-fit sm:flex  sm:flex-col-reverse md:grid-cols-2   items-center   md:px-[7rem]  sm:px-[1.8rem] sm:py-[6rem] md:py-[0] sm:gap-[2.3rem] md:gap-[0]    ${project.reverse ? " md:justify-items-end" : ""}`}>
 				<div className={`sm:w-full md:w-fit ${project.reverse ? "md:order-2 md:justify-items-end" : "md:order-0"}`}>
 					<p className={`font-serif md:text-8xl sm:text-[2.4rem] font-bold md:mb-7 sm:mb-0 ${project.colorBG === "projectBlack" ? "text-projectWhite" : " text-projectBlack"} `}>{project.title}</p>
 					<p className={`text-projectGrey md:mb-[4.8rem] sm:mb-[2.4rem]  md:text-4xl sm:text-[1.8rem]`}>{project.subTitle}</p>
@@ -20,7 +20,7 @@ const Project: FunctionComponent<ProjectProps> = ({ project }) => {
 						View project <img src={project.colorBG === "projectBlack" ? "/icons/leftArrowWhite.svg" : "/icons/leftArrowBlack.svg"} alt="left arrow" />
 					</Link>
 				</div>
-				<LazyLoadImage src={project.img.url} alt={project.img.alt} className="" effect="opacity" />
+				<img src={project.img.url} alt={project.img.alt} className="  aspect-auto" />
 			</div>
 		</div>
 	);

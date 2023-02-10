@@ -6,12 +6,11 @@ import ProjectWrapper from "./ProjectWrapper";
 interface ScrollToTopButtonProps {}
 
 const ScrollToTopButton: FunctionComponent<ScrollToTopButtonProps> = () => {
-	const { pathname } = useLocation();
 	const handleClick = () => {
 		window.scrollTo(0, 0);
 	};
 	return (
-		<button onClick={handleClick} className="bg-projectBlack fixed right-[4rem] top-[4.5rem] rounded-full p-[1rem]">
+		<button onClick={handleClick} className="bg-projectBlack fixed z-[999] right-[4rem] bottom-[4.5rem] rounded-full p-[1rem]">
 			<img src="/icons/BackToTop.svg" alt="back to top icon" />
 		</button>
 	);
