@@ -16,14 +16,28 @@ interface UIProps {
 
 const UI: FunctionComponent<UIProps> = ({ bgColor, greyText, image, subTitleText, textColor, title }) => {
 	return (
-		<ProjectWrapper bgColor={bgColor} textColor={textColor}>
-			<>
-				<GraySubHeader text={greyText} />
-				<Title isFitWidth={true} title={title} />
-				<SubTitle subTitleText={subTitleText} />
-				<img src={image.url} alt={image.alt} />
-			</>
-		</ProjectWrapper>
+		<>
+			<ProjectWrapper
+				bgColor={bgColor}
+				textColor={textColor}
+			>
+				<>
+					<GraySubHeader text={greyText} />
+					<Title
+						isFitWidth={true}
+						title={title}
+					/>
+					<SubTitle subTitleText={subTitleText} />
+				</>
+			</ProjectWrapper>
+			<div className={`w-[100%] ${bgColor} ${textColor}`}>
+				<img
+					className={`w-[1280px] mx-auto`}
+					src={image.url}
+					alt={image.alt}
+				/>
+			</div>
+		</>
 	);
 };
 

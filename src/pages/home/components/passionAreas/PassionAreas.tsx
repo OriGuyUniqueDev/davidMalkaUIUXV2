@@ -27,7 +27,10 @@ const PassionAreas: FunctionComponent<PassionAreasProps> = () => {
 			<p className="md:text-center sm:text-start sm:leading-[6rem] font-bold md:text-[8.4rem] sm:text-[6.4rem] font-serif">Passion areas</p>
 			<div className="flex md:flex-row sm:flex-col gap-24 justify-center sm:mt-[3rem] md:mt-0  md:h-[28rem] sm:h-fit ">
 				{passionsData.map((passionData, index) => (
-					<PassionArea key={index} passion={passionData} />
+					<PassionArea
+						key={index}
+						passion={passionData}
+					/>
 				))}
 			</div>
 		</div>

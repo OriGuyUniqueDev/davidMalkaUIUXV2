@@ -43,15 +43,61 @@ const Redis: FunctionComponent<RedisProps> = () => {
 	];
 	return (
 		<div className="">
-			<HeroProject resImage={{ url: "/images/projects/redis/images/heroMobile.png", alt: "redis Background" }} imageBG={{ url: "/images/projects/redis/images/heroBG.png", alt: "redis Background" }} image={{ url: "/images/projects/redis/images/heroMockup.png", alt: "redis mockup" }} />
+			<HeroProject
+				resImage={{ url: "/images/projects/redis/images/heroMobile.png", alt: "redis Background" }}
+				imageBG={{ url: "/images/projects/redis/images/heroBG.png", alt: "redis Background" }}
+				image={{ url: "/images/projects/redis/images/heroMockup.png", alt: "redis mockup" }}
+			/>
 			<AboutProject data={aboutText} />
-			<PartOfTeam bgColor={"bg-projectBlack"} textColor={"text-projectWhite"} title={"Part of a team"} image={{ url: "/images/projects/redis/images/redisIcon.png", alt: "redis icon" }} subTitleText={"I had the pleasure of working with Yifat Ziv (Radis designer) and Yonathan Solomon (product manager) on a project where we developed a new design system, came up with creative solutions for our product and had a great time brainstorming together. I want to give a shout-out to my fantastic team for an excellent collaboration over the 6 months we worked together."} />
-			<RedisChallenges challenges={challenges} title={"Challenges"} bgColor={"bg-projectWhite"} textColor={"text-projectBlack"} />
-			<ListOneTwoThree bgColor={"bg-[#6479DB]"} textColor={"text-projectWhite"} numColor={"text-projectBlack"} title={"My responsible was..."} cards={cards} greyText={""} />
-			<BeforeAfter grayText1={"Last version"} grayText2={"new version"} title={"Before & After"} bgColor={"bg-projectBlack"} textColor={"text-projectWhite"} />
-			<UI bgColor={"bg-projectLightGray"} textColor={"text-projectBlack"} greyText={""} title={"Style & Components"} image={{ url: "/images/projects/redis/images/ui.png", alt: "ui image" }} subTitleText={""} />
+			<PartOfTeam
+				bgColor={"bg-projectBlack"}
+				textColor={"text-projectWhite"}
+				title={"Part of a team"}
+				image={{ url: "/images/projects/redis/images/redisIcon.png", alt: "redis icon" }}
+				subTitleText={"I had the pleasure of working with Yifat Ziv (Radis designer) and Yonathan Solomon (product manager) on a project where we developed a new design system, came up with creative solutions for our product and had a great time brainstorming together. I want to give a shout-out to my fantastic team for an excellent collaboration over the 6 months we worked together."}
+			/>
+			<RedisChallenges
+				challenges={challenges}
+				title={"Challenges"}
+				bgColor={"bg-projectWhite"}
+				textColor={"text-projectBlack"}
+			/>
+			<ListOneTwoThree
+				bgColor={"bg-[#6479DB]"}
+				textColor={"text-projectWhite"}
+				numColor={"text-projectBlack"}
+				title={"My responsible was..."}
+				cards={cards}
+				greyText={""}
+			/>
+			<BeforeAfter
+				grayText1={"Last version"}
+				grayText2={"new version"}
+				title={"Before & After"}
+				bgColor={"bg-projectBlack"}
+				textColor={"text-projectWhite"}
+			/>
+			<UI
+				bgColor={"bg-projectWhite"}
+				textColor={"text-projectBlack"}
+				greyText={""}
+				title={"User interface"}
+				image={{ alt: "redisUI", url: "/images/projects/redis/images/redisUI.png" }}
+				subTitleText={""}
+			/>
+			<UI
+				bgColor={"bg-projectLightGray"}
+				textColor={"text-projectBlack"}
+				greyText={""}
+				title={"Style & Components"}
+				image={{ url: "/images/projects/redis/images/ui.png", alt: "ui image" }}
+				subTitleText={""}
+			/>
 			<Contact />
-			<ProjectNavigation previous="figmaManage" next="ramAderet" />
+			<ProjectNavigation
+				previous="figmaManage"
+				next="ramAderet"
+			/>
 		</div>
 	);
 };

@@ -49,16 +49,28 @@ const RamAderet: FunctionComponent<RamAderetProps> = () => {
 	];
 	return (
 		<div className="">
-			<HeroProject resImage={{ url: "/images/projects/ramAderet/images/heroMobile.png", alt: "ramAderet Background" }} imageBG={{ url: "/images/projects/ramAderet/images/heroBG.png", alt: "ramAderet Background" }} image={{ url: "/images/projects/ramAderet/images/heroMockup.png", alt: "ram aderet mockup" }} />
+			<HeroProject
+				isRamAderet={true}
+				resImage={{ url: "/images/projects/ramAderet/images/heroMobile.png", alt: "ramAderet Background" }}
+				imageBG={{ url: "/images/projects/ramAderet/images/heroBG.png", alt: "ramAderet Background" }}
+				image={{ url: "/images/projects/ramAderet/images/heroMockup.png", alt: "ram aderet mockup" }}
+			/>
 			<AboutProject data={aboutText} />
 			<ExploreIdeas data={exploreText} />
 			<ResearchUsers />
-			<ChallengesPainPoints color="text-projectGray" painPoints={painPoints} challenges={challenges} />
+			<ChallengesPainPoints
+				color="text-projectGray"
+				painPoints={painPoints}
+				challenges={challenges}
+			/>
 			<Execution images={[{ url: "/images/projects/ramAderet/images/execution.png", alt: "execution image" }]} />
 			<BringTogether images={[{ url: "/images/projects/ramAderet/images/bringTogether.png", alt: "bring together image" }]} />
 			<StyleGuide image={{ url: "/images/projects/ramAderet/images/styleGuide.png", alt: "style guide image" }} />
 			<Contact />
-			<ProjectNavigation previous="redis" next="abra" />
+			<ProjectNavigation
+				previous="redis"
+				next="abra"
+			/>
 		</div>
 	);
 };

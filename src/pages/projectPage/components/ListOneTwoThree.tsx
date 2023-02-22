@@ -14,7 +14,10 @@ interface ListOneTwoThreeProps {
 
 const ListOneTwoThree: FunctionComponent<ListOneTwoThreeProps> = ({ bgColor, numColor, textColor, title, cards, greyText }) => {
 	return (
-		<ProjectWrapper bgColor={bgColor} textColor={textColor}>
+		<ProjectWrapper
+			bgColor={bgColor}
+			textColor={textColor}
+		>
 			<>
 				<GraySubHeader text={greyText} />
 				<p className="text-[8.4rem] font-bold font-serif w-fit mb-[8.1rem]">{title}</p>
@@ -22,10 +25,10 @@ const ListOneTwoThree: FunctionComponent<ListOneTwoThreeProps> = ({ bgColor, num
 					{cards.map((card, index) => {
 						return (
 							<div className="flex gap-[6rem] w-[94.2rem] items-center">
-								<p className={`${numColor} text-[20rem]`}>{index + 1}.</p>
+								<p className={`${numColor} font-bold text-[20rem]`}>{index + 1}.</p>
 								<div className="flex flex-col gap-[2.4rem]">
 									<p className="font-bold text-[3.6rem]">{card.title}</p>
-									<p className="text-[1.8rem]">{card.text}</p>
+									<p className="text-[1.8rem] font-light">{card.text}</p>
 								</div>
 							</div>
 						);

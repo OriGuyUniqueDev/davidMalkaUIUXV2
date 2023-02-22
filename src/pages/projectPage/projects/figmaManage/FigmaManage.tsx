@@ -79,7 +79,11 @@ const FigmaManage: FunctionComponent<FigmaManageProps> = () => {
 	];
 	return (
 		<div className="">
-			<HeroProject resImage={{ url: "/images/projects/figmaManage/images/heroMobile.png", alt: "figmaManage Background" }} imageBG={{ url: "/images/projects/figmaManage/images/heroBG.png", alt: "figmaManage Background" }} image={{ url: "/images/projects/figmaManage/images/heroMockup.png", alt: "figmaManage" }} />
+			<HeroProject
+				resImage={{ url: "/images/projects/figmaManage/images/heroMobile.png", alt: "figmaManage Background" }}
+				imageBG={{ url: "/images/projects/figmaManage/images/heroBG.png", alt: "figmaManage Background" }}
+				image={{ url: "/images/projects/figmaManage/images/heroMockup.png", alt: "figmaManage" }}
+			/>
 			<AboutProject data={aboutText} />
 			<ManagingDesign
 				bgColor="bg-projectBlack"
@@ -89,10 +93,34 @@ const FigmaManage: FunctionComponent<FigmaManageProps> = () => {
 tasks in one place"
 				cards={cards}
 			/>
-			<ManagingDesign bgColor="bg-projectWhite" grayHeader="Personas." textColor="text-projectBlack" title="Target Audience" cards={cards2} />
-			<ListOneTwoThree bgColor={"bg-projectBlack"} textColor={"text-projectWhite"} numColor={"text-projectWhite"} title={"Why does it contribute?"} cards={oneTwoThreeData} greyText={"Advantages."} />
-			<Dilemas bgColor={"bg-projectWhite"} textColor={"text-projectBlack"} greyText={"CHLLENGES & DILEMAS."} title={"Where it should be palced"} />
-			<Price bgColor={"bg-projectBlack"} textColor={"text-projectWhite"} greyText={"pricing page"} title={"How much do you want to pay?"} subTitleText={"Before I started designing, I thought about how I wanted the page to look and what type of wireframes or structure would be clear, responsive, and fit the desired UI. Creating wireframes is a crucial step in the design process. It helps us identify any mistakes or misconceptions before we even start the UI, allowing us to make any necessary changes and create the best end result."} />
+			<ManagingDesign
+				bgColor="bg-projectWhite"
+				grayHeader="Personas."
+				textColor="text-projectBlack"
+				title="Target Audience"
+				cards={cards2}
+			/>
+			<ListOneTwoThree
+				bgColor={"bg-projectBlack"}
+				textColor={"text-projectWhite"}
+				numColor={"text-projectWhite"}
+				title={"Why does it contribute?"}
+				cards={oneTwoThreeData}
+				greyText={"Advantages."}
+			/>
+			<Dilemas
+				bgColor={"bg-projectWhite"}
+				textColor={"text-projectBlack"}
+				greyText={"CHLLENGES & DILEMAS."}
+				title={"Where it should be palced"}
+			/>
+			<Price
+				bgColor={"bg-projectBlack"}
+				textColor={"text-projectWhite"}
+				greyText={"pricing page"}
+				title={"How much do you want to pay?"}
+				subTitleText={"Before I started designing, I thought about how I wanted the page to look and what type of wireframes or structure would be clear, responsive, and fit the desired UI. Creating wireframes is a crucial step in the design process. It helps us identify any mistakes or misconceptions before we even start the UI, allowing us to make any necessary changes and create the best end result."}
+			/>
 			<PriceUI
 				bgColor={"bg-[#202020]"}
 				textColor={"text-projectWhite"}
@@ -100,14 +128,32 @@ tasks in one place"
 				title={"User interface"}
 				image={[
 					{ url: "/images/projects/figmaManage/images/price4.png", alt: "price image" },
-					{ url: "/images/projects/figmaManage/images/heroMockup.png", alt: "price image" },
+					// { url: "/images/projects/figmaManage/images/heroMockup.png", alt: "price image" },
 				]}
 				subTitleText={"I designed a stylish pricing page for our Figma plugin, with a bold black background and clean design to showcase its capabilities through animations and videos. Users can choose monthly or annual subscription options, with a trial option available. The goal is to clearly communicate the benefits of the plugin and make it affordable."}
 			/>
-			<UI bgColor={"bg-projectWhite"} textColor={"text-projectBlack"} greyText={"USER INTEERFACE"} title={"Style & Components"} image={{ url: "/images/projects/figmaManage/images/ui.png", alt: "ui image" }} subTitleText={"I designed a clean and minimal page for designer users, with a focus on current design trends. The goal is to provide important information in a simple, uncluttered space for easy navigation."} />
-			<Presentation imageButton={{ url: "/icons/leftArrowBlack.svg", alt: "left arrow" }} bgColor={"bg-projectLightGray"} textColor={"text-projectBlack"} greyText={""} title={"Presentation"} image={{ url: "/images/projects/figmaManage/images/presentation.png", alt: "presentation image" }} subTitleText={"I understand the key elements of product branding and the design process and am confident in my ability to communicate these ideas effectively. With my attention to detail and love for design, I'm excited to share my expertise and make a positive impact with my presentation."} />
+			<UI
+				bgColor={"bg-projectWhite"}
+				textColor={"text-projectBlack"}
+				greyText={"USER INTEERFACE"}
+				title={"Style & Components"}
+				image={{ url: "/images/projects/figmaManage/images/ui.png", alt: "ui image" }}
+				subTitleText={"I designed a clean and minimal page for designer users, with a focus on current design trends. The goal is to provide important information in a simple, uncluttered space for easy navigation."}
+			/>
+			<Presentation
+				imageButton={{ url: "/icons/leftArrowBlack.svg", alt: "left arrow" }}
+				bgColor={"bg-projectLightGray"}
+				textColor={"text-projectBlack"}
+				greyText={""}
+				title={"Presentation"}
+				image={{ url: "/images/projects/figmaManage/images/presentation.png", alt: "presentation image" }}
+				subTitleText={"I understand the key elements of product branding and the design process and am confident in my ability to communicate these ideas effectively. With my attention to detail and love for design, I'm excited to share my expertise and make a positive impact with my presentation."}
+			/>
 			<Contact />
-			<ProjectNavigation previous="paamonim" next="redis" />
+			<ProjectNavigation
+				previous="paamonim"
+				next="redis"
+			/>
 		</div>
 	);
 };

@@ -14,14 +14,21 @@ interface PartOfTeamProps {
 
 const PartOfTeam: FunctionComponent<PartOfTeamProps> = ({ bgColor, textColor, title, subTitleText, image }) => {
 	return (
-		<ProjectWrapper bgColor={bgColor} textColor={textColor}>
+		<ProjectWrapper
+			bgColor={bgColor}
+			textColor={textColor}
+		>
 			<>
 				<div className="flex w-full justify-between ">
 					<div>
 						<Title title={title} />
 						<SubTitle subTitleText={subTitleText} />
 					</div>
-					<img className="aspect-square h-[23.2rem]" src={image.url} alt={image.alt} />
+					<img
+						className="aspect-square"
+						src={image.url}
+						alt={image.alt}
+					/>
 				</div>
 			</>
 		</ProjectWrapper>

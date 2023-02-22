@@ -17,14 +17,25 @@ interface PresentationProps {
 
 const Presentation: FunctionComponent<PresentationProps> = ({ bgColor, greyText, image, subTitleText, textColor, title, imageButton }) => {
 	return (
-		<ProjectWrapper bgColor={bgColor} textColor={textColor}>
+		<ProjectWrapper
+			bgColor={bgColor}
+			textColor={textColor}
+		>
 			<>
 				<Title title={title} />
 				<SubTitle subTitleText={subTitleText} />
 				<span className="mb-[3.9rem] mt-[4.4rem] block w-[20.5rem]">
-					<ButtonTextWithIcon borderColor="border-projectBlack" text={"View presentation"} image={imageButton} />
+					<ButtonTextWithIcon
+						borderColor="border-projectBlack"
+						text={"View presentation"}
+						image={imageButton}
+					/>
 				</span>
-				<img className="h-[49.3rem] relative ml-auto" src={image.url} alt={image.alt} />
+				<img
+					className="aspect-auto w-[62.3rem] relative ml-auto"
+					src={image.url}
+					alt={image.alt}
+				/>
 			</>
 		</ProjectWrapper>
 	);

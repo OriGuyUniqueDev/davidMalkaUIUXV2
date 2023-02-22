@@ -14,10 +14,13 @@ const ChallengesPainPoints: FunctionComponent<ChallengesPainPointsProps> = ({ pa
 	return (
 		<div className=" bg-projectLightGray w-full py-[12rem] text-projectBlack ">
 			<div className="md:max-w-[1280px] mx-auto md:px-[7rem] sm:px-[1.8rem] ">
-				<p className="font-bold font-serif md:text-[6.4rem] sm:text-[4.8rem] mb-[4.4rem] ">Challenges & Pain points</p>
+				<p className="font-bold font-serif md:text-[8.4rem] w-[60rem] sm:text-[4.8rem] mb-[4.4rem] ">Challenges & Pain points</p>
 				<Challenges challenges={challenges} />
 				<hr className="my-[4.4rem]" />
-				<PainPoint painPoints={painPoints} color={color} />
+				<PainPoint
+					painPoints={painPoints}
+					color={color}
+				/>
 			</div>
 		</div>
 	);

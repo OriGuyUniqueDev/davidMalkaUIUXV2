@@ -14,13 +14,34 @@ interface RouterProps {}
 const Router: FunctionComponent<RouterProps> = () => {
 	return (
 		<Routes>
-			<Route path="/" element={<HomePage />} />
-			<Route path="/about" element={<About />} />
-			<Route path="project/ramAderet" element={<RamAderet />} />
-			<Route path="project/abra" element={<Abra />} />
-			<Route path="project/paamonim" element={<Paamonim />} />
-			<Route path="project/figmaManage" element={<FigmaManage />} />
-			<Route path="project/redis" element={<Redis />} />
+			<Route
+				path="/"
+				element={<HomePage />}
+			/>
+			<Route
+				path="/about"
+				element={<About />}
+			/>
+			<Route
+				path="project/ramAderet"
+				element={<RamAderet />}
+			/>
+			<Route
+				path="project/abra"
+				element={<Abra />}
+			/>
+			<Route
+				path="project/paamonim"
+				element={<Paamonim />}
+			/>
+			<Route
+				path="project/figmaManage"
+				element={<FigmaManage />}
+			/>
+			<Route
+				path="project/redis"
+				element={<Redis />}
+			/>
 		</Routes>
 	);
 };

@@ -1,0 +1,14 @@
+a.activeNav::after {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 3px;
+	position: relative;
+	top: 5px;
+
+	transform: translateX(80%);
+	background-color: white;
+	text-align: center;
+	/* padding-top: 3px; */
+	/* border-bottom: 2px solid #f9dd94; */
+}

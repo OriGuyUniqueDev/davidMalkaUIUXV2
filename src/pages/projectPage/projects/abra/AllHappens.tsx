@@ -25,18 +25,26 @@ const AllHappens: FunctionComponent<AllHappensProps> = () => {
 		},
 	];
 	return (
-		<div className="bg-projectBlack text-projectWhite relative w-full md:py-[12rem] sm:py-[6rem] ">
+		<div className="bg-projectBlack relative text-projectWhite  w-full md:py-[12rem] sm:py-[6rem] ">
 			<div className="md:max-w-[1280px] mx-auto md:px-[7rem] sm:px-[1.8rem] ">
 				<div className="w-full">
 					<p className="text-[8.4rem] w-[45rem] font-serif font-bold leading-[10rem] ">Here is all happens</p>
-					<p className="text-[1.8rem] w-[65.7rem] mt-[2.4rem] mb-[10rem]">Along with my teammates, spent a year developing our Studio Portfolio, which is now a significant part of our company's website. The idea for this project was born from my own initiative, and after careful consideration, we decided to integrate it fully into the company. This is an exciting step forward for us and shows our commitment to making the studio a key player in the business.</p>
-					<LazyLoadImage className="mb-[10rem]" src="/images/projects/abra/images/happens1.png" alt="happens photo" />
-					<LazyLoadImage className="mb-[10rem]" src="/images/projects/abra/images/happens2.png" alt="happens photo" />
+					<p className="text-[1.8rem] w-[65.7rem] mt-[2.4rem] font-light mb-[10rem]">Along with my teammates, spent a year developing our Studio Portfolio, which is now a significant part of our company's website. The idea for this project was born from my own initiative, and after careful consideration, we decided to integrate it fully into the company. This is an exciting step forward for us and shows our commitment to making the studio a key player in the business.</p>
+					<img
+						className="mb-[10rem] w-[100vw]"
+						src="/images/projects/abra/images/happens1.png"
+						alt="happens photo"
+					/>
+					<img
+						className="mb-[10rem] w-[100vw]"
+						src="/images/projects/abra/images/happens2.png"
+						alt="happens photo"
+					/>
 					<p className="text-[2.1rem] uppercase text-center sm:hidden md:block   text-projectGrey mb-[7.2rem]">Portfolio’s goals</p>
 					<div className="grid grid-cols-2 gap-[12rem]">
 						{painPoints.map((painPoint, index) => {
 							return (
-								<div>
+								<div className="w-[33.9rem] mx-auto">
 									<div className="flex gap-[1.9rem] items-end ">
 										<p className="text-[10rem]  font-bold text-[#FF9500]">.{index + 1}</p>
 										<p className="text-[2.4rem] text-projectWhite mb-12">{painPoint.title}</p>
@@ -46,8 +54,14 @@ const AllHappens: FunctionComponent<AllHappensProps> = () => {
 							);
 						})}
 					</div>
+					<img
+						className=" mt-[10rem] relative z-20 w-[100vw]"
+						src="/images/projects/abra/images/happens3.png"
+						alt="happens photo"
+					/>
 				</div>
 			</div>
+			<div className="bg-projectWhite h-[40rem] z-10 w-full absolute bottom-0"> </div>
 		</div>
 	);
 };
