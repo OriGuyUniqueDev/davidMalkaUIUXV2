@@ -14,14 +14,12 @@ const BringTogether: FunctionComponent<BringTogetherProps> = ({ images }) => {
 			textColor="text-projectBlack"
 		>
 			<>
-				<div className="md:max-w-[1280px] mx-auto  sm:px-[1.8rem] ">
+				<div className="">
 					<p className="font-bold font-serif md:text-[8.4rem] sm:text-[4.8rem] w-[52.6rem] mb-[4.4rem]">Bring it all together</p>
 				</div>
 				{images.map((image) => {
 					return (
 						<img
-							// width="100%"
-							className="w-[100%] h-fit"
 							src={image.url}
 							alt={image.alt}
 						/>
